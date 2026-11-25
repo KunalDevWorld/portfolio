@@ -13,14 +13,14 @@ export function Overlay() {
       >
         <div className="flex items-center gap-3 mb-6">
           <div className="w-6 h-[1px] bg-cyan-400/40" />
-          <span className="text-[10px] text-cyan-400/70 tracking-[0.35em] uppercase font-medium">
-            Explore More Below
+          <span className="text-[10px] text-cyan-400/70 tracking-[0.35em] uppercase font-semibold">
+            Sr. Mobile App Developer
           </span>
           <div className="w-6 h-[1px] bg-cyan-400/40" />
         </div>
 
-        <h2 className="text-[clamp(3.5rem,8vw,6.5rem)] font-black text-white leading-[0.95] mb-3" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-          Developer
+        <h2 className="text-[clamp(3.2rem,7.5vw,6rem)] font-black text-white leading-[0.95] mb-3" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+          Kunal Bhardwaj
         </h2>
         <p
           className="text-[clamp(1.5rem,3vw,2.5rem)] font-black mb-6 tracking-wider"
@@ -32,10 +32,10 @@ export function Overlay() {
             filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.6))'
           }}
         >
-          &amp; Content Creator.
+          Developer &amp; Creator.
         </p>
-        <p className="text-gray-600 text-sm tracking-widest">
-          4+ years · Flutter · Android · Full Stack Developer
+        <p className="text-gray-400 text-xs sm:text-sm tracking-widest max-w-2xl mx-auto leading-relaxed">
+          Nearly 4 Years Exp · Flutter · React Native · Android &amp; iOS
         </p>
 
         {/* Bouncing down arrow */}

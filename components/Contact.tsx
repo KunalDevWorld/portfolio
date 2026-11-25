@@ -18,7 +18,7 @@ const contactMethods = [
   },
   {
     label: 'Phone',
-    value: '+91-8826264415',
+    value: '+91 8826264415',
     href: 'tel:+918826264415',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -29,8 +29,8 @@ const contactMethods = [
   },
   {
     label: 'Location',
-    value: 'Sanjay Nagar, Ghaziabad',
-    href: 'https://maps.google.com/?q=Sanjay+Nagar,+Ghaziabad',
+    value: 'Noida / Ghaziabad, UP, India',
+    href: 'https://maps.google.com/?q=Noida,+UP,+India',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
@@ -125,7 +125,7 @@ function ContactCard({
         >
           {method.label}
         </p>
-        <p className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+        <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
           {method.value}
         </p>
       </div>
@@ -202,10 +202,9 @@ export function Contact() {
             initial={{ opacity: 0 }}
             animate={headInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="text-gray-500 text-base max-w-lg mx-auto leading-relaxed"
+            className="text-gray-400 text-base max-w-lg mx-auto leading-relaxed"
           >
-            Whether it&apos;s a project, a collaboration, or just a conversation about
-            tech — I&apos;m always open to connecting.
+            Looking for a Senior Mobile Application Developer for your next project, architecture consulting, or leadership role? Let&apos;s connect.
           </motion.p>
         </div>
 
@@ -251,12 +250,36 @@ export function Contact() {
 
         {/* ── Footer ──────────────────────────────────── */}
         <div
-          className="pt-8 border-t text-center"
+          className="pt-8 border-t text-center flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500"
           style={{ borderColor: 'rgba(255,255,255,0.05)' }}
         >
-          <p className="text-gray-700 text-xs tracking-wider">
-            © {new Date().getFullYear()} Kunal Bhardwaj · Built with Next.js & Framer Motion
-          </p>
+          <p>© {new Date().getFullYear()} Kunal Bhardwaj · Sr. Mobile App Developer</p>
+          <div className="flex items-center gap-6">
+            <a
+              href="https://github.com/KunalDevWorld"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-400 transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kunal-bhardwajflutter/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-400 transition-colors"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://www.youtube.com/c/DrivewithKunal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-rose-400 transition-colors"
+            >
+              YouTube
+            </a>
+          </div>
         </div>
       </div>
     </section>
